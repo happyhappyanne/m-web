@@ -1,0 +1,49 @@
+/* 流式布局   百分比布局 */
+body {
+    background-color: #f6f6f6;
+    max-width: 1072px;
+    min-width: 320px;
+}
+/* 头部 */
+header {
+    height: 45px;
+    background-color: #333;
+}
+.header-left,
+.header-main,
+.header-right {
+    height: 45px;
+}
+.header-left,
+.header-right {
+    position: absolute;
+    top: 0;
+}
+.header-left {
+    width: 75px;
+    left: 0;
+    background-color: red;
+}
+.header-left div:first-child {
+    width: 10px;
+    height: 10px;
+    background: url(../upload/cha.png) no-repeat;
+    background-size: 10px auto;
+}
+.header-left div:last-child {
+    width: 30px;
+    height: 30px;
+    background: url(../upload/jd.png) no-repeat;
+    background-size: 30px auto;
+    transform: rotate(-90deg);
+}
+.header-main {
+    width: 100%;
+    padding: 0 104px 0 75px;
+    background-color: blue;
+}
+.header-right {
+    width: 104px;
+    right: 0;
+    background-color: pink;
+}
